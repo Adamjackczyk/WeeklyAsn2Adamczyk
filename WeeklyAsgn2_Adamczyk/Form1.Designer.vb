@@ -23,134 +23,149 @@ Partial Class frmBurger
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
-        Me.pic1 = New System.Windows.Forms.PictureBox()
-        Me.pic2 = New System.Windows.Forms.PictureBox()
-        Me.btn1 = New System.Windows.Forms.Button()
-        Me.btn2 = New System.Windows.Forms.Button()
-        Me.btn3 = New System.Windows.Forms.Button()
-        Me.lbl2 = New System.Windows.Forms.Label()
-        Me.lbl3 = New System.Windows.Forms.Label()
-        Me.btn4 = New System.Windows.Forms.Button()
-        CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pic2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnBeef = New System.Windows.Forms.Button()
+        Me.btnSelect = New System.Windows.Forms.Button()
+        Me.btnVeggie = New System.Windows.Forms.Button()
+        Me.lblChoose = New System.Windows.Forms.Label()
+        Me.lblEnjoy = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.picVeggie = New System.Windows.Forms.PictureBox()
+        Me.picBeef = New System.Windows.Forms.PictureBox()
+        CType(Me.picVeggie, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBeef, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Tahoma", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.Red
         Me.lblHeading.Location = New System.Drawing.Point(239, 24)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(314, 34)
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Farm Burger Specials"
         '
-        'pic1
+        'btnBeef
         '
-        Me.pic1.Location = New System.Drawing.Point(115, 61)
-        Me.pic1.Name = "pic1"
-        Me.pic1.Size = New System.Drawing.Size(217, 195)
-        Me.pic1.TabIndex = 1
-        Me.pic1.TabStop = False
+        Me.btnBeef.BackColor = System.Drawing.Color.Wheat
+        Me.btnBeef.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBeef.Location = New System.Drawing.Point(151, 272)
+        Me.btnBeef.Name = "btnBeef"
+        Me.btnBeef.Size = New System.Drawing.Size(116, 31)
+        Me.btnBeef.TabIndex = 3
+        Me.btnBeef.Text = " Prime Beef"
+        Me.btnBeef.UseVisualStyleBackColor = False
         '
-        'pic2
+        'btnSelect
         '
-        Me.pic2.Location = New System.Drawing.Point(467, 61)
-        Me.pic2.Name = "pic2"
-        Me.pic2.Size = New System.Drawing.Size(197, 195)
-        Me.pic2.TabIndex = 2
-        Me.pic2.TabStop = False
+        Me.btnSelect.BackColor = System.Drawing.Color.Wheat
+        Me.btnSelect.Enabled = False
+        Me.btnSelect.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSelect.Location = New System.Drawing.Point(341, 272)
+        Me.btnSelect.Name = "btnSelect"
+        Me.btnSelect.Size = New System.Drawing.Size(109, 31)
+        Me.btnSelect.TabIndex = 4
+        Me.btnSelect.Text = "Select Meal"
+        Me.btnSelect.UseVisualStyleBackColor = False
         '
-        'btn1
+        'btnVeggie
         '
-        Me.btn1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn1.Location = New System.Drawing.Point(150, 276)
-        Me.btn1.Name = "btn1"
-        Me.btn1.Size = New System.Drawing.Size(112, 23)
-        Me.btn1.TabIndex = 3
-        Me.btn1.Text = " Prime Beef"
-        Me.btn1.UseVisualStyleBackColor = True
+        Me.btnVeggie.BackColor = System.Drawing.Color.Wheat
+        Me.btnVeggie.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVeggie.Location = New System.Drawing.Point(553, 272)
+        Me.btnVeggie.Name = "btnVeggie"
+        Me.btnVeggie.Size = New System.Drawing.Size(88, 27)
+        Me.btnVeggie.TabIndex = 5
+        Me.btnVeggie.Text = "Veggie"
+        Me.btnVeggie.UseVisualStyleBackColor = False
         '
-        'btn2
+        'lblChoose
         '
-        Me.btn2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn2.Location = New System.Drawing.Point(341, 276)
-        Me.btn2.Name = "btn2"
-        Me.btn2.Size = New System.Drawing.Size(107, 23)
-        Me.btn2.TabIndex = 4
-        Me.btn2.Text = "Select Meal"
-        Me.btn2.UseVisualStyleBackColor = True
+        Me.lblChoose.AutoSize = True
+        Me.lblChoose.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChoose.Location = New System.Drawing.Point(216, 310)
+        Me.lblChoose.Name = "lblChoose"
+        Me.lblChoose.Size = New System.Drawing.Size(360, 18)
+        Me.lblChoose.TabIndex = 6
+        Me.lblChoose.Text = "Choose a burger and then click the Select Meal button"
         '
-        'btn3
+        'lblEnjoy
         '
-        Me.btn3.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn3.Location = New System.Drawing.Point(553, 272)
-        Me.btn3.Name = "btn3"
-        Me.btn3.Size = New System.Drawing.Size(88, 27)
-        Me.btn3.TabIndex = 5
-        Me.btn3.Text = "Veggie"
-        Me.btn3.UseVisualStyleBackColor = True
+        Me.lblEnjoy.AutoSize = True
+        Me.lblEnjoy.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEnjoy.Location = New System.Drawing.Point(300, 343)
+        Me.lblEnjoy.Name = "lblEnjoy"
+        Me.lblEnjoy.Size = New System.Drawing.Size(172, 18)
+        Me.lblEnjoy.TabIndex = 7
+        Me.lblEnjoy.Text = "Enjoy your burger special"
+        Me.lblEnjoy.Visible = False
         '
-        'lbl2
+        'btnExit
         '
-        Me.lbl2.AutoSize = True
-        Me.lbl2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl2.Location = New System.Drawing.Point(216, 310)
-        Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(360, 18)
-        Me.lbl2.TabIndex = 6
-        Me.lbl2.Text = "Choose a burger and then click the Select Meal button"
+        Me.btnExit.BackColor = System.Drawing.Color.Wheat
+        Me.btnExit.Enabled = False
+        Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(331, 386)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(128, 27)
+        Me.btnExit.TabIndex = 8
+        Me.btnExit.Text = "Exit Window"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
-        'lbl3
+        'picVeggie
         '
-        Me.lbl3.AutoSize = True
-        Me.lbl3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl3.Location = New System.Drawing.Point(300, 343)
-        Me.lbl3.Name = "lbl3"
-        Me.lbl3.Size = New System.Drawing.Size(172, 18)
-        Me.lbl3.TabIndex = 7
-        Me.lbl3.Text = "Enjoy your burger special"
+        Me.picVeggie.Image = Global.WeeklyAsgn2_Adamczyk.My.Resources.Resources.veggie
+        Me.picVeggie.Location = New System.Drawing.Point(467, 61)
+        Me.picVeggie.Name = "picVeggie"
+        Me.picVeggie.Size = New System.Drawing.Size(197, 195)
+        Me.picVeggie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picVeggie.TabIndex = 2
+        Me.picVeggie.TabStop = False
+        Me.picVeggie.Visible = False
         '
-        'btn4
+        'picBeef
         '
-        Me.btn4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn4.Location = New System.Drawing.Point(331, 386)
-        Me.btn4.Name = "btn4"
-        Me.btn4.Size = New System.Drawing.Size(128, 27)
-        Me.btn4.TabIndex = 8
-        Me.btn4.Text = "Exit Window"
-        Me.btn4.UseVisualStyleBackColor = True
+        Me.picBeef.Image = Global.WeeklyAsgn2_Adamczyk.My.Resources.Resources.prime
+        Me.picBeef.Location = New System.Drawing.Point(115, 61)
+        Me.picBeef.Name = "picBeef"
+        Me.picBeef.Size = New System.Drawing.Size(217, 195)
+        Me.picBeef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBeef.TabIndex = 1
+        Me.picBeef.TabStop = False
+        Me.picBeef.Visible = False
         '
         'frmBurger
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FloralWhite
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btn4)
-        Me.Controls.Add(Me.lbl3)
-        Me.Controls.Add(Me.lbl2)
-        Me.Controls.Add(Me.btn3)
-        Me.Controls.Add(Me.btn2)
-        Me.Controls.Add(Me.btn1)
-        Me.Controls.Add(Me.pic2)
-        Me.Controls.Add(Me.pic1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.lblEnjoy)
+        Me.Controls.Add(Me.lblChoose)
+        Me.Controls.Add(Me.btnVeggie)
+        Me.Controls.Add(Me.btnSelect)
+        Me.Controls.Add(Me.btnBeef)
+        Me.Controls.Add(Me.picVeggie)
+        Me.Controls.Add(Me.picBeef)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmBurger"
         Me.Text = "Burger Specials"
-        CType(Me.pic1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pic2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picVeggie, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBeef, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblHeading As Label
-    Friend WithEvents pic1 As PictureBox
-    Friend WithEvents pic2 As PictureBox
-    Friend WithEvents btn1 As Button
-    Friend WithEvents btn2 As Button
-    Friend WithEvents btn3 As Button
-    Friend WithEvents lbl2 As Label
-    Friend WithEvents lbl3 As Label
-    Friend WithEvents btn4 As Button
+    Friend WithEvents btnBeef As Button
+    Friend WithEvents btnSelect As Button
+    Friend WithEvents btnVeggie As Button
+    Friend WithEvents lblChoose As Label
+    Friend WithEvents lblEnjoy As Label
+    Friend WithEvents btnExit As Button
+    Friend WithEvents picVeggie As PictureBox
+    Friend WithEvents picBeef As PictureBox
 End Class
